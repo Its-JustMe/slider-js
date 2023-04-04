@@ -103,7 +103,7 @@ a:hover::after {
     font-size: 5em;
 }
 .text-container {
-    min-width: 400px;
+    min-width: 350px;
     max-width: 680px;
     
     margin-left: 4em;
@@ -133,5 +133,6 @@ a:hover::after {
     }
     .text-container > p {
         font-size: 1.4em;
+        padding-left: 10px;
     }
 }
