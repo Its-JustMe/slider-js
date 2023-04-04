@@ -130,6 +130,7 @@ input.select::after {
     content: '';
     width: 10px;
     height: 10px;
+    background-color: #575656;
     border-radius: 50%;
 }
 
