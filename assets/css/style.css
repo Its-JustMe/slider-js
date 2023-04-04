@@ -130,6 +130,8 @@ a:hover::after {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    position: relative;
+    z-index: 1;
 }
 input.select {
     display: none;
