@@ -121,7 +121,7 @@ a:hover::after {
 
 /* ------ Configurações de Responsividade ------*/
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
     .menu-wrap {
         display: none;
     }
