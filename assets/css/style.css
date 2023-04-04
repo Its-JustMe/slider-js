@@ -13,10 +13,6 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
-main {
-    position: relative;
-    z-index: 1;
-}
 
 a {
     color: #fff;
