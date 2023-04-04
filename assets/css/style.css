@@ -123,6 +123,10 @@ a:hover::after {
 }
 
 .checkbox-container {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    background: #fff;
     display: flex;
     flex-direction: row;
     gap: 1em;
