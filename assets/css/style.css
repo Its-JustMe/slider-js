@@ -118,6 +118,21 @@ a:hover::after {
     font-size: 1.5em;
 }
 
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+input.select {
+    display: none;
+}
+input.select::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
 
 /* ------ Configurações de Responsividade ------*/
 
