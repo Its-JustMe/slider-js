@@ -3,8 +3,8 @@
 import { mudarClasseBtn, trocarSlide, trocarTexto } from './modules.js';
 
 const btn_slider = document.querySelectorAll('.select');
-const slides = document.querySelectorAll('video');slides.pop();
-const textos = document.querySelectorAll('.slider');
+const slides = document.querySelectorAll('video')
+const textos = document.querySelectorAll('.slider'); console.log(textos);
 
 let slideAtual = slides[0];
 let slideProximo = slides[1];
