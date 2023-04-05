@@ -28,3 +28,5 @@
     <li> <em>JavaScript DOM</em>
   </ul>
 </ul>
+
+<p> Baseado em: https://gabriel-damas.github.io/Slide.Anime/</p>
