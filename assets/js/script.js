@@ -20,7 +20,7 @@ setInterval(() => {
     slideAtual = slideProximo;
     slideProximo = slideAtual.nextElementSibling || slides[0];
 
-    trocarTexto(textoAtual, proximoTexts);
+    trocarTexto(textoAtual, proximoTexto, textos);
     textoAtual = proximoTexto;
     proximoTexto = proximoTexto.nextElementSibling || textos[0];
 
