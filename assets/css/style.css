@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 2em;;
+    height: 2em;
 
     background: #11073323;
     padding: 0.8em;
@@ -137,7 +137,7 @@ a:hover::after {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #454352;
+    background: #f5f5f5;
     cursor: pointer;
     transition: all 1s;
 }
