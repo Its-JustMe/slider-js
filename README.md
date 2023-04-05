@@ -11,7 +11,7 @@
   um slide-show de personagens de animes famosos.
 </p>
 <p>
-  Você pode acessar o site clicando neste link: https://relogio-navy.vercel.app/
+  Você pode acessar o site clicando neste link: https://slider-js-ten.vercel.app/
 </p>
 
 <h3> ➢ Outras informações </h3>
