@@ -21,6 +21,8 @@ setInterval(() => {
     slideProximo = slideAtual.nextElementSibling || slides[0];
 
     trocarTexto(textoAtual, proximoTexto, textos);
+    textoAtual = proximoTexto;
+    proximoTexto = proximoTexto.nextElementSibling || textos[0];
 
     mudarClasseBtn(primeiroBtn, proximoBtn);
     primeiroBtn = proximoBtn;

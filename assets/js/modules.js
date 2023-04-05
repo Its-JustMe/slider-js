@@ -4,10 +4,10 @@ export function mudarClasseBtn (primeiro_btn, proximo_btn) {
 }
 
 export function trocarTexto (textoAtual, proximoText, slider) {
-    if (textoAtual.classList.contains('active')) {
-        textoAtual.classList.remove('active');
-        proximoTexto.classList.add('active');
-    } else {
+    textoAtual.classList.remove('active');
+    proximoTexto.classList.add('active');
+
+    if (slider[3].classList.remove('active')) {
         slider[0].classList.add('active');
     }
 }
