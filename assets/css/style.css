@@ -78,7 +78,7 @@ a:hover::after {
     height: auto;
     
     position: absolute;
-        left: 0;
+        left: 10px;
         top: 3px;
     
         opacity: .8;
@@ -115,30 +115,35 @@ a:hover::after {
     text-shadow: 2px 1px #301a92;
 }
 .text-container > p {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .checkbox-container {
-    width: 300px;
-    height: 40px;
+    width: 100%;
+    overflow: hidden;
 
-    margin: auto;
     margin-top: 4em;
     position: relative;
     z-index: 1;
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
 }
-.select::after {
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: #575656;
-    border-radius: 50%;
-}
 
+.select {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #454352;
+    cursor: pointer;
+    transition: all 1s;
+}
+.select.selected {
+    background: #87e7ff;
+}
 
 /* ------ Configurações de Responsividade ------*/
 
@@ -153,7 +158,7 @@ a:hover::after {
         margin-left: 0;
     }
     .text-container > p {
-        font-size: 1.4em;
+        font-size: 1.5em;
         padding-left: 10px;
     }
 }
