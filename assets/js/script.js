@@ -3,7 +3,7 @@
 import { mudarClasseBtn, trocarSlide, trocarTexto } from './modules.js';
 
 const btn_slider = document.querySelectorAll('.select');
-const slides = document.querySelectorAll('video');
+const slides = document.querySelectorAll('video');slides.pop();
 const textos = document.querySelectorAll('.slider');
 
 let slideAtual = slides[0];
