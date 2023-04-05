@@ -1,3 +1,4 @@
+
 //import { mudarClasseBtn } from "./modules.js";
 import { mudarClasseBtn, trocarSlide, trocarTexto } from './modules.js';
 
