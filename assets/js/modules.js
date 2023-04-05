@@ -3,14 +3,13 @@ export function mudarClasseBtn (primeiro_btn, proximo_btn) {
     proximo_btn.classList.add('selected');
 }
 
-export function trocarTexto (textos) {
-    textos.forEach(slider => {
-        if (slider.classList.contains('active')) {
-            slider.classList.remove('active');
-        } else {
-            slider.classList.add('active');
-        }
-    })
+export function trocarTexto (textoAtual, proximoText, slider) {
+    if (textoAtual.classList.contains('active')) {
+        textoAtual.classList.remove('active');
+        proximoTexto.classList.add('active');
+    } else {
+        slider[0].classList.add('active');
+    }
 }
 
 export function trocarSlide(slideAtual, proximoSlide) {

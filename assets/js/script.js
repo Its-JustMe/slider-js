@@ -20,7 +20,7 @@ setInterval(() => {
     slideAtual = slideProximo;
     slideProximo = slideAtual.nextElementSibling || slides[0];
 
-    trocarTexto(textos);
+    trocarTexto(textoAtual, proximoTexto, textos);
 
     mudarClasseBtn(primeiroBtn, proximoBtn);
     primeiroBtn = proximoBtn;
