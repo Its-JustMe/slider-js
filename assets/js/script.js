@@ -6,11 +6,11 @@ const btn_slider_checked = document.querySelector('.select.selected');
 
 const slides = document.querySelectorAll('video');
 
+let slideAtual = slides[0];
+let slideProximo = slides[1];
+
 setInterval(() => {
-    btn_slider.forEach(button => {
-        button.onclick = () => {
-            mudarClasseBtn(button, btn_slider);
-            trocarSlide(slides);
-        };
-    });
-}, 1000);
+    trocarSlide(slideAtual, slideProximo);
+    slideAtual = slideProximo;
+    slideProximo = slideAtual.nextElementSibling || slides[0];
+}, 8000);

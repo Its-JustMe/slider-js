@@ -12,11 +12,7 @@ export function mudarClasseBtn (button, all_btn) {
     });
 }
 
-export function trocarSlide (slides) {
-    const activeSlide = document.querySelector('.slide.active');
-    activeSlide.classList.remove('active');
-
-    const nextSlide = activeSlide.nextElementSibling || slides[0];
-    nextSlide.classList.add('active');
+export function trocarSlide(slideAtual, proximoSlide, btn) {
+    slideAtual.classList.remove('active');
+    proximoSlide.classList.add('active');
 }
-
