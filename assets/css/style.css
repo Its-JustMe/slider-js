@@ -142,7 +142,7 @@ a:hover::after {
     transition: all 1s;
 }
 .select.selected {
-    background: #87e7ff;
+    background: #f38942;
 }
 
 /* ------ Configurações de Responsividade ------*/
