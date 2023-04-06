@@ -120,7 +120,7 @@ a:hover::after {
 }
 
 .btn-container {
-    width: 500px;
+    width: fit-content;
     overflow: hidden;
 
     margin: 4em auto;
