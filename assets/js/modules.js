@@ -4,7 +4,7 @@ export function mudarClasseBtn (primeiro_btn, proximo_btn) {
 }
 
 export function trocarTexto (textoAtual, proximoTexto, textos) {
-    if (textoAtual.nextElementSimbling) {
+    if (textoAtual === textos[0]) {
         textos[0].classList.add('active');
     } else {
         textoAtual.classList.remove('active');
