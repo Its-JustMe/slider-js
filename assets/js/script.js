@@ -1,7 +1,8 @@
 import { mudarClasseBtn, trocarSlide, trocarTexto } from './modules.js';
 
 const btn_slider = document.querySelectorAll('.select');
-const slides = document.querySelectorAll('video')
+const slides = document.querySelectorAll('video');
+const textoSlides = document.querySelectorAll(".slider");
 
 let slideAtual = slides[0];
 let slideProximo = slides[1];
@@ -9,17 +10,8 @@ let slideProximo = slides[1];
 let primeiroBtn = btn_slider[0];
 let proximoBtn = btn_slider[1];
 
-const sliders = document.querySelectorAll(".slider");
-
-const nextSlide = () => {
-    sliders.forEach(slide => {
-        if (slide.nextElementSibling) {
-            slide.classList.remove('active');
-        } else {
-            slide.classList.add('active');
-        }
-    })
-};
+let textoAtual = textoSlides[0];
+let textoProximo = textoSlides[1];
 
 setInterval(() => {
     trocarSlide(slideAtual, slideProximo);
@@ -30,6 +22,8 @@ setInterval(() => {
     primeiroBtn = proximoBtn;
     proximoBtn = primeiroBtn.nextElementSibling || btn_slider[0];
 
-    nextSlide();
+    trocarTexto(textoAtual, textoProximo);
+    textoAtual = textoProximo;
+    textoProximo = textoAtual.nextElementSibling || textoSlides[0];
 
 }, 9000);
