@@ -150,8 +150,10 @@ a:hover::after {
     height: 22px;
     position: relative;
 }
-
 .alternate {
+    display: none;
+}
+.alternate.active {
     position: fixed;
 
     width: 100%;

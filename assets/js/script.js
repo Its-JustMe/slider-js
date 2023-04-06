@@ -15,11 +15,13 @@ for (let i = 0; i < buttons.length; i++) {
     }
 
     document.querySelector(`video[name="${this.name}"]`).classList.add('active');
+    document.querySelector('.alternate').classList.add('active');
 
     for (let j = 0; j < sliders.length; j++) {
       sliders[j].classList.remove('active');
     }
 
     sliders[i].classList.add('active');
+    document.querySelector('.alternate').classList.remove('active');
   });
 }
