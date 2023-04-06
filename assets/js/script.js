@@ -15,8 +15,9 @@ const nextSlide = () => {
     const current = document.querySelector(".active");
     current.classList.remove("active");
     if (current.nextElementSibling) {
+        current.querySelector(".text-container").style.display = 'none';
         current.nextElementSibling.classList.add("active");
-        current.querySelector(".text-container").classList.add('active');
+        current.querySelector(".text-container").style.display = 'block';
     } else {
         sliders[0].classList.add("active");
         const firstSlide = sliders[0];
