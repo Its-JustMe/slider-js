@@ -225,6 +225,7 @@ a:hover::after {
         border-radius: 2px;
         background-color: #fff;
         animation: rotacionarIcone .5s linear;
+        transform: rotate(180deg);
     }
     .mobile-menu:hover > .line {
         background-color: #f99e62;
