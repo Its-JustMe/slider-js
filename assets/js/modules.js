@@ -1,5 +1,5 @@
 /** Função que controla o slideshow manualmente */
-export function slideShow() {
+export function slideShow(buttons, sliders, videos) {
     for (let j = 0; j < buttons.length; j++) {
       buttons[j].classList.remove('selected');
     }
