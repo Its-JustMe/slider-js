@@ -12,7 +12,7 @@ let proximoBtn = btn_slider[1];
 const sliders = document.querySelectorAll(".slider");
 
 const nextSlide = () => {
-    const current = document.querySelector(".active");
+    const current = document.querySelector(".slider.active");
     current.classList.remove("active");
     if (current.nextElementSibling) {
         current.nextElementSibling.classList.add("active");
