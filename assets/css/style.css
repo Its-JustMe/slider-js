@@ -5,7 +5,7 @@ header {
     background: #11073323;
     padding: 0.8em;
 
-    z-index: 1;
+    z-index: 2;
     position: relative;
 
     display: flex;
@@ -153,9 +153,12 @@ a:hover::after {
 
 .alternate {
     position: fixed;
+
     width: 100%;
     height: 100%;
+
     background-color: #f38942; 
+    z-index: 1;
 }
 
 /* ------ Configurações de Responsividade ------*/
