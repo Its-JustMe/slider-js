@@ -1,14 +1,19 @@
-export function mudarClasseBtn (primeiro_btn, proximo_btn) {
-    primeiro_btn.classList.remove('selected');
-    proximo_btn.classList.add('selected');
-}
+/** Função que controla o slideshow manualmente */
+export function slideShow() {
+    for (let j = 0; j < buttons.length; j++) {
+      buttons[j].classList.remove('selected');
+    }
+    this.classList.add('selected');
 
-export function trocarTexto (textoAtual, proximoTexto, textos) {
-    textoAtual.classList.remove('active');
-    proximoTexto.classList.add('active');
-}
+    for (let j = 0; j < videos.length; j++) {
+      videos[j].classList.remove('active');
+    }
 
-export function trocarSlide(slideAtual, proximoSlide) {
-    slideAtual.classList.remove('active');
-    proximoSlide.classList.add('active');
+    document.querySelector(`video[name="${this.name}"]`).classList.add('active');
+
+    for (let j = 0; j < sliders.length; j++) {
+      sliders[j].classList.remove('active');
+    }
+
+    sliders[i].classList.add('active');
 }
