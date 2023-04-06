@@ -161,7 +161,7 @@ a:hover::after {
     z-index: 2;
 
     animation: alternarSlide all 1s linear;
-    transition: all 1s;
+    transition: all 5s;
 }
 
 /* ------ Animações ------*/
@@ -170,7 +170,7 @@ a:hover::after {
     from {
         transform: translateX(-100px);
     } to {
-        transform: translateX(500px);
+        transform: translateX(1200px);
     }
 }
 
