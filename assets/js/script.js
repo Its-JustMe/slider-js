@@ -13,6 +13,7 @@ const sliders = document.querySelectorAll(".slider");
 
 const nextSlide = () => {
     const current = document.querySelector(".slider.active");
+    alert(current);
     current.classList.remove("active");
     if (current.nextElementSibling) {
         current.nextElementSibling.classList.add("active");
