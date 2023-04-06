@@ -32,7 +32,6 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 menuBtn.addEventListener('click', function () {
-    alert('Clicou');
     if (menuBtn.classList.contains('animate')) {
         menuBtn.classList.toggle('animate');
     } else {
