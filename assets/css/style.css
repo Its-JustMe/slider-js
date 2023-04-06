@@ -169,24 +169,6 @@ a:hover::after {
     animation: alternarSlide .5s linear;
 }
 
-/* ------ Animações ------*/
-
-@keyframes alternarSlide {
-    from {
-        transform: translateX(-100%);
-    } to {
-        transform: translateX(100%);
-    }
-}
-
-@keyframes rotacionarIcone {
-    from {
-        transform: rotate(0);
-    } to {
-        transform: rotate(90deg);
-    }
-}
-
 /* ------ Configurações de Responsividade ------*/
 
 @media (max-width: 780px) {
@@ -231,6 +213,24 @@ a:hover::after {
 
     .mobile-menu.animate {
         animation: rotacionarIcone .5s;
+        transform: rotate(90deg);
+    }
+}
+
+/* ------ Animações ------*/
+
+@keyframes alternarSlide {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes rotacionarIcone {
+    from {
+        transform: rotate(0);
+    } to {
         transform: rotate(90deg);
     }
 }
