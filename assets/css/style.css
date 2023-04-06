@@ -158,7 +158,7 @@ a:hover::after {
     height: 100%;
 
     background-color: #f38942; 
-    z-index: 1;
+    z-index: 2;
 }
 
 /* ------ Configurações de Responsividade ------*/
