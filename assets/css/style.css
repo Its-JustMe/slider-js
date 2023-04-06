@@ -205,7 +205,7 @@ a:hover::after {
     }
 
     .mobile-menu {
-        width: 50px;
+        width: 40px;
         height: auto;
     
         display: flex;
