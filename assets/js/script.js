@@ -1,27 +1,26 @@
-/** Função que controla o slideshow manualmente */
-function slideShow(buttons, sliders, videos) {
-    for (let btn in buttons) {
-      buttons[btn].classList.remove('selected');
-    }
-    buttons.classList.add('selected');
-
-    for (let video in videos) {
-      videos[video].classList.remove('active');
-    }
-
-    document.querySelector(`video[name="${this.name}"]`).classList.add('active');
-
-    for (let slide in sliders) {
-      sliders[slide].classList.remove('active');
-    }
-
-    sliders[i].classList.add('active');
-}
-
 const buttons = document.querySelectorAll('.select');
 const sliders = document.querySelectorAll('.slider');
 const videos = document.querySelectorAll('.bg-video');
 
-for (let i in buttons) {
-  buttons[i].addEventListener('click', slideShow());
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    for (let j = 0; j < buttons.length; j++) {
+      buttons[j].classList.remove('selected');
+    }
+
+    this.classList.add('selected');
+
+    for (let j = 0; j < videos.length; j++) {
+      videos[j].classList.remove('active');
+    }
+
+    document.querySelector(`video[name="${this.name}"]`).classList.add('active');
+
+    // Remove a classe "active" de todos os sliders
+    for (let j = 0; j < sliders.length; j++) {
+      sliders[j].classList.remove('active');
+    }
+
+    sliders[i].classList.add('active');
+  });
 }
