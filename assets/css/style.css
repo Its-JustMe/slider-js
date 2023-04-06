@@ -183,7 +183,7 @@ a:hover::after {
     from {
         transform: rotate(0);
     } to {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
 }
 
@@ -225,7 +225,7 @@ a:hover::after {
         border-radius: 2px;
         background-color: #fff;
         animation: rotacionarIcone .5s;
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
     .mobile-menu:hover > .line {
         background-color: #f99e62;
