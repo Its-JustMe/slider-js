@@ -154,11 +154,24 @@ a:hover::after {
 .alternate {
     position: fixed;
 
-    width: 100%;
+    width: 50%;
     height: 100%;
 
     background-color: #f38942; 
     z-index: 2;
+
+    animation: alternarSlide all 1s linear;
+    transition: all 1s;
+}
+
+/* ------ Animações ------*/
+
+@keyframes alternarSlide {
+    from {
+        transform: translateX(-100px);
+    } to {
+        transform: translateX(500px);
+    }
 }
 
 /* ------ Configurações de Responsividade ------*/
