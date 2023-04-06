@@ -146,6 +146,8 @@ a:hover::after {
 }
 .select.selected {
     background: #f38942;
+    width: 30px;
+    height: 30px;
 }
 
 /* ------ Configurações de Responsividade ------*/
