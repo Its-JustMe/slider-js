@@ -16,7 +16,6 @@ for (let i = 0; i < buttons.length; i++) {
 
     document.querySelector(`video[name="${this.name}"]`).classList.add('active');
 
-    // Remove a classe "active" de todos os sliders
     for (let j = 0; j < sliders.length; j++) {
       sliders[j].classList.remove('active');
     }
