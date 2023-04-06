@@ -30,11 +30,11 @@ for (let i = 0; i < buttons.length; i++) {
     sliders[i].classList.add('active');
   });
 }
-
-menuBtn.onclick = () => {
+alert(menuBtn);
+menuBtn.addEventListener('click', function () {
     if (menuBtn.classList.contains('animate')) {
-        menuBtn.classList.add('animate');
+        this.classList.add('animate');
     } else {
-        menuBtn.classList.remove('animate');
+        this.classList.remove('animate');
     }
-}
+});
