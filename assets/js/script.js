@@ -9,6 +9,10 @@ let slideProximo = slides[1];
 let primeiroBtn = btn_slider[0];
 let proximoBtn = btn_slider[1];
 
+const sliders = document.querySelectorAll(".slider");
+const intervalTime = 9000;
+let slideInterval;
+
 const nextSlide = () => {
     const current = document.querySelector(".active");
     current.classList.remove("active");
