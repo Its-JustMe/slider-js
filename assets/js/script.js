@@ -10,8 +10,6 @@ let primeiroBtn = btn_slider[0];
 let proximoBtn = btn_slider[1];
 
 const sliders = document.querySelectorAll(".slider");
-const intervalTime = 9000;
-let slideInterval;
 
 const nextSlide = () => {
     const current = document.querySelector(".active");
@@ -26,8 +24,6 @@ const nextSlide = () => {
     }
 };
 
-slideInterval = setInterval(nextSlide, intervalTime);
-
 setInterval(() => {
     trocarSlide(slideAtual, slideProximo);
     slideAtual = slideProximo;
@@ -36,4 +32,6 @@ setInterval(() => {
     mudarClasseBtn(primeiroBtn, proximoBtn);
     primeiroBtn = proximoBtn;
     proximoBtn = primeiroBtn.nextElementSibling || btn_slider[0];
+
+    nextSlide();
 }, 9000);
