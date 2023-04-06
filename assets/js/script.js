@@ -12,24 +12,35 @@ let proximoBtn = btn_slider[1];
 const sliders = document.querySelectorAll(".slider");
 
 const nextSlide = () => {
+    sliders.forEach(slide => {
+        if (slide.classList.contains('active')) {
+            slide.classList.remove('active');
+        } else {
+            slide.classList.add('active');
+        }
+    })
+    /*
     const current = document.querySelector(".active");
     current.classList.remove("active");
     if (current.nextElementSibling) {
-        current.querySelector(".text-container").style.display = 'none';
         current.nextElementSibling.classList.add("active");
-        current.querySelector(".text-container").style.display = 'block';
     } else {
         sliders[0].classList.add("active");
         const firstSlide = sliders[0];
         const firstSlideText = firstSlide.querySelector(".text-container");
         firstSlideText.style.display = "block";
-    }
+    }*/
 };
 
 setInterval(() => {
+    trocarSlide(slideAtual, slideProximo);
+    slideAtual = slideProximo;
+    slideProximo = slideAtual.nextElementSibling || slides[0];
+
     mudarClasseBtn(primeiroBtn, proximoBtn);
     primeiroBtn = proximoBtn;
     proximoBtn = primeiroBtn.nextElementSibling || btn_slider[0];
 
     nextSlide();
+
 }, 9000);
