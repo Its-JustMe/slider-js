@@ -2,6 +2,8 @@ const buttons = document.querySelectorAll('.select');
 const sliders = document.querySelectorAll('.slider');
 const videos = document.querySelectorAll('.bg-video');
 
+const menuBtn = document.querySelector('.mobile-menu');
+
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function() {
     document.querySelector('div.alternate').classList.add('active');
@@ -27,4 +29,12 @@ for (let i = 0; i < buttons.length; i++) {
 
     sliders[i].classList.add('active');
   });
+}
+
+menuBtn.onclick = () => {
+    if (menuBtn.classList.contains('animate')) {
+        menuBtn.classList.add('animate');
+    } else {
+        menuBtn.classList.remove('animate');
+    }
 }

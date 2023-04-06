@@ -217,9 +217,6 @@ a:hover::after {
         margin-right: 1.6em;
         cursor: pointer;
         transition: all .5s;
-        animation: rotacionarIcone .5s;
-
-        transform: rotate(90deg);
     }
     .line {
         width: 100%;
@@ -233,6 +230,7 @@ a:hover::after {
     }
 
     .mobile-menu.animate {
-        animation: rotacionarIcone .5s linear;
+        animation: rotacionarIcone .5s;
+        transform: rotate(90deg);
     }
 }
