@@ -12,8 +12,7 @@ let proximoBtn = btn_slider[1];
 const sliders = document.querySelectorAll(".slider");
 
 const nextSlide = () => {
-    const current = document.querySelector(".slider.active");
-    alert(current);
+    const current = document.querySelector(".active");
     current.classList.remove("active");
     if (current.nextElementSibling) {
         current.nextElementSibling.classList.add("active");
@@ -26,10 +25,6 @@ const nextSlide = () => {
 };
 
 setInterval(() => {
-    trocarSlide(slideAtual, slideProximo);
-    slideAtual = slideProximo;
-    slideProximo = slideAtual.nextElementSibling || slides[0];
-
     mudarClasseBtn(primeiroBtn, proximoBtn);
     primeiroBtn = proximoBtn;
     proximoBtn = primeiroBtn.nextElementSibling || btn_slider[0];
