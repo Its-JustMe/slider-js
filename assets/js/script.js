@@ -30,8 +30,9 @@ for (let i = 0; i < buttons.length; i++) {
     sliders[i].classList.add('active');
   });
 }
-alert(menuBtn);
+
 menuBtn.addEventListener('click', function () {
+    alert('Clicou');
     if (menuBtn.classList.contains('animate')) {
         this.classList.add('animate');
     } else {
