@@ -206,15 +206,15 @@ a:hover::after {
         align-items: center;
         justify-content: center;
     
-        margin-right: 1.5em;
+        margin-right: 1.6em;
         cursor: pointer;
     }
     .line {
         width: 100%;
-        height: 3px;
+        height: 4px;
     
         border-radius: 2px;
-        background-color: #fff;
+        background-color: #f99e62;
     }
     .mobile-menu:hover > .line {
         background-color: #999;
