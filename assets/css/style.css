@@ -198,15 +198,15 @@ a:hover::after {
 
     .mobile-menu {
         width: 50px;
-        height: 60px;
+        height: 65px;
     
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
         align-items: center;
         justify-content: center;
     
-        margin-right: 10px;
+        margin-right: 1.2em;
     }
     .line {
         width: 100%;
@@ -214,5 +214,11 @@ a:hover::after {
     
         border-radius: 2px;
         background-color: #fff;
+    }
+    .mobile-menu:hover > .line {
+        background-color: #999;
+    }
+    .mobile-menu:focus-within {
+        transform: rotate(180deg);
     }
 }
