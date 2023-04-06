@@ -3,7 +3,7 @@ function slideShow(buttons, sliders, videos) {
     for (let btn in buttons) {
       buttons[btn].classList.remove('selected');
     }
-    this.classList.add('selected');
+    buttons.classList.add('selected');
 
     for (let video in videos) {
       videos[video].classList.remove('active');
