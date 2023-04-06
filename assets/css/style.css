@@ -160,8 +160,7 @@ a:hover::after {
     background-color: #f38942; 
     z-index: 2;
 
-    animation: alternarSlide all 1s linear;
-    transition: all 5s;
+    animation: alternarSlide 5s linear;
 }
 
 /* ------ Animações ------*/
