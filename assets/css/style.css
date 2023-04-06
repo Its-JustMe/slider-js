@@ -142,8 +142,7 @@ a:hover::after {
     background: #f5f5f5;
     cursor: pointer;
     transition: all 1s;
-    position: absolute;
-        top: 5px;
+    position: relative;
 }
 .select.selected {
     background: #f38942;
