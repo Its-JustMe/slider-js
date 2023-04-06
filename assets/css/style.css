@@ -141,13 +141,13 @@ a:hover::after {
     border-radius: 50%;
     background: #f5f5f5;
     cursor: pointer;
-    transition: all 1s;
+    transition: all .6s;
     position: relative;
 }
 .select.selected {
     background: #f38942;
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     position: relative;
 }
 
