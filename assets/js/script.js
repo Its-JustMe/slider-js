@@ -5,6 +5,10 @@ const videos = document.querySelectorAll('.bg-video');
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function() {
     document.querySelector('div.alternate').classList.add('active');
+    setTimeout(() => {
+        document.querySelector('div.alternate').classList.remove('active');
+    }, 1000);
+    
     for (let j = 0; j < buttons.length; j++) {
       buttons[j].classList.remove('selected');
     }
@@ -22,6 +26,5 @@ for (let i = 0; i < buttons.length; i++) {
     }
 
     sliders[i].classList.add('active');
-    document.querySelector('div.alternate').classList.remove('active');
   });
 }
