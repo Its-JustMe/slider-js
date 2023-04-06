@@ -233,5 +233,7 @@ a:hover::after {
 
     .mobile-menu.animate {
         animation: rotacionarIcone .5s linear;
+        display: flex;
+        flex-direction: row;
     }
 }
