@@ -22,7 +22,7 @@ setInterval(() => {
     primeiroBtn = proximoBtn;
     proximoBtn = primeiroBtn.nextElementSibling || btn_slider[0];
 
-    trocarTexto(textoAtual, textoProximo);
+    trocarTexto(textoAtual, textoProximo, textoSlides);
     textoAtual = textoProximo;
     textoProximo = textoAtual.nextElementSibling || textoSlides[0];
 
