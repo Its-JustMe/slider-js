@@ -148,9 +148,7 @@ a:hover::after {
     background: #f38942;
     width: 25px;
     height: 25px;
-    position: absolute;
-    top: 3px;
-    left: 0;
+    position: relative;
 }
 
 /* ------ Configurações de Responsividade ------*/
