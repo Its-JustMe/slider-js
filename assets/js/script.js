@@ -7,8 +7,8 @@ for (let i = 0; i < buttons.length; i++) {
     document.querySelector('div.alternate').classList.add('active');
     setTimeout(() => {
         document.querySelector('div.alternate').classList.remove('active');
-    }, 1000);
-    
+    }, 500);
+
     for (let j = 0; j < buttons.length; j++) {
       buttons[j].classList.remove('selected');
     }
