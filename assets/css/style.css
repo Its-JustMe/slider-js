@@ -82,7 +82,7 @@ a:hover::after {
         left: 10px;
         top: 3px;
     
-        opacity: .8;
+    opacity: .8;
 }
 
 .menu-item {
