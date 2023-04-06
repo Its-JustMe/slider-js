@@ -22,6 +22,6 @@ for (let i = 0; i < buttons.length; i++) {
     }
 
     sliders[i].classList.add('active');
+    document.querySelector('div.alternate').classList.remove('active');
   });
-  document.querySelector('div.alternate').classList.remove('active');
 }
