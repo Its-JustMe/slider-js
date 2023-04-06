@@ -11,4 +11,8 @@ export function trocarTexto (textoAtual, proximoTexto) {
 export function trocarSlide(slideAtual, proximoSlide) {
     slideAtual.classList.remove('active');
     proximoSlide.classList.add('active');
+
+    if (slideAtual === 0) {
+        slides[0].classList.add('active');
+      }
 }
