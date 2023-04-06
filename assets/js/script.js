@@ -13,23 +13,12 @@ const sliders = document.querySelectorAll(".slider");
 
 const nextSlide = () => {
     sliders.forEach(slide => {
-        if (slide.classList.contains('active')) {
+        if (slide.nextElementSibling) {
             slide.classList.remove('active');
         } else {
             slide.classList.add('active');
         }
     })
-    /*
-    const current = document.querySelector(".active");
-    current.classList.remove("active");
-    if (current.nextElementSibling) {
-        current.nextElementSibling.classList.add("active");
-    } else {
-        sliders[0].classList.add("active");
-        const firstSlide = sliders[0];
-        const firstSlideText = firstSlide.querySelector(".text-container");
-        firstSlideText.style.display = "block";
-    }*/
 };
 
 setInterval(() => {
