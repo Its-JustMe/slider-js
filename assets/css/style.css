@@ -179,6 +179,14 @@ a:hover::after {
     }
 }
 
+@keyframes rotacionarIcone {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(180deg);
+    }
+}
+
 /* ------ Configurações de Responsividade ------*/
 
 @media (max-width: 780px) {
@@ -208,15 +216,21 @@ a:hover::after {
     
         margin-right: 1.6em;
         cursor: pointer;
+        transition: all .5s;
     }
     .line {
         width: 100%;
         height: 4px;
     
         border-radius: 2px;
-        background-color: #f99e62;
+        background-color: #fff;
+        animation: rotacionarIcone .5s linear;
     }
     .mobile-menu:hover > .line {
-        background-color: #999;
+        background-color: #f99e62;
+    }
+
+    .mobile-menu.animate {
+        animation: rotacionarIcone .5s linear;
     }
 }
