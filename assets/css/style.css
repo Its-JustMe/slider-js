@@ -181,9 +181,9 @@ a:hover::after {
 
 @keyframes rotacionarIcone {
     from {
-        transform: rotateX(0);
+        transform: rotateY(0);
     } to {
-        transform: rotateX(90deg);
+        transform: rotateY(90deg);
     }
 }
 
@@ -225,7 +225,7 @@ a:hover::after {
         border-radius: 2px;
         background-color: #fff;
         animation: rotacionarIcone .5s;
-        transform: rotateX(90deg);
+        transform: rotateY(90deg);
     }
     .mobile-menu:hover > .line {
         background-color: #f99e62;
