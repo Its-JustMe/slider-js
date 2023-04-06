@@ -6,8 +6,9 @@ export function mudarClasseBtn (primeiro_btn, proximo_btn) {
 export function trocarTexto (textoAtual, proximoTexto, textos) {
     textoAtual.classList.remove('active');
     proximoTexto.classList.add('active');
-    if (textoAtual === 0) {
-        slides[0].classList.add('active');
+    
+    if (textoAtual.nextElementSibling) {
+        
     }
 }
 
