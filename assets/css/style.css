@@ -159,6 +159,7 @@ a:hover::after {
 .alternate.active {
     position: fixed;
     display: block;
+    transform: rotate(45deg);
 
     width: 100%;
     height: 100%;
