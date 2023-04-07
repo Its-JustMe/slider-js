@@ -127,6 +127,8 @@ a:hover::after {
     overflow: hidden;
 
     margin: 4em auto;
+    padding: 10px;
+    
     position: relative;
     z-index: 2;
     position: relative;
