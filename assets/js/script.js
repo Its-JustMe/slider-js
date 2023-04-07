@@ -21,7 +21,7 @@ for (let i = 0; i < buttons.length; i++) {
       videos[j].classList.remove('active');
     }
 
-    document.querySelector(`video[name="${this.name}"]`).classList.add('active');
+    document.querySelector(`${this.id}`).classList.add('active');
 
     for (let j = 0; j < sliders.length; j++) {
       sliders[j].classList.remove('active');
