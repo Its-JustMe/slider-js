@@ -1,5 +1,9 @@
 /* ------ Seletores Tags ------*/
 
+body {
+    background-color: #000;
+}
+
 header {
     width: 100%;
     height: 2em;
