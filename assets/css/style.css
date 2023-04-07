@@ -190,3 +190,51 @@ a:hover::after {
 
     animation: alternarSlide .5s linear;
 }
+
+/* ------ Configurações de Responsividade ------*/
+
+@media (max-width: 780px) {
+    .menu-wrap {
+        display: none;
+    }
+    .titulo-anime {
+        font-size: 3em;
+    }
+    .text-container {
+        margin-left: 0;
+    }
+    .text-container > p {
+        font-size: 1em;
+        padding-left: 5px;
+    }
+
+    .mobile-menu {
+        width: 40px;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    
+        margin-right: 1.6em;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    .line {
+        width: 100%;
+        height: 4px;
+    
+        border-radius: 2px;
+        background-color: #fff;
+    }
+    .mobile-menu:hover > .line {
+        background-color: #f99e62;
+    }
+
+    .mobile-menu.animate {
+        animation: rotacionarIcone .5s;
+        transform: rotate(90deg);
+    }
+}
