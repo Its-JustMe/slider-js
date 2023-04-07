@@ -157,7 +157,7 @@ a:hover::after {
     display: none;
 }
 .alternate.active {
-    position: fixed;
+    position: relative;
     display: block;
     transform: rotate(45deg);
 
