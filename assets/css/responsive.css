@@ -5,6 +5,11 @@
         display: none;
     }
 
+    .slider {
+        margin-top: 20px;
+        padding: .5em;
+    }
+
     .titulo-anime {
         font-size: 3em;
     }
@@ -24,7 +29,7 @@
         background-color: #11073323;
         backdrop-filter: blur(3px);
 
-        position: fixed;
+        position: relative;
         right: 0;
         top: 57px;
 
