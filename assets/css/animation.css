@@ -1,0 +1,25 @@
+/* ------ Animações ------*/
+
+@keyframes alternarSlide {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes rotacionarIcone {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes show-menu {
+    from {
+        transform: translateX(200px);
+    } to {
+        transform: translateX(0);
+    }
+}

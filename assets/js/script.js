@@ -1,32 +1,47 @@
 
 //import { mudarClasseBtn } from "./modules.js";
-import { mudarClasseBtn, trocarSlide, trocarTexto } from './modules.js';
+const buttons = document.querySelectorAll('.select');
+const sliders = document.querySelectorAll('.slider');
+const videos = document.querySelectorAll('.bg-video');
 
-const btn_slider = document.querySelectorAll('.select');
-const slides = document.querySelectorAll('video');
-const textos = document.querySelectorAll('.slider');
+const menuBtn = document.querySelector('.mobile-menu');
+const navMenu = document.querySelector('nav.menu-wrap');
 
-console.log(textos);
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    document.querySelector('div.alternate').classList.add('active');
+    setTimeout(() => {
+      document.querySelector('div.alternate').classList.remove('active');
 
-let slideAtual = slides[0];
-let slideProximo = slides[1];
+      document.querySelector(`video#${this.name}`).classList.add('active');
+    }, 500);
 
-let textoAtual = textos[0];
-let proximoTexto = textos[1];
+    for (let j = 0; j < buttons.length; j++) {
+      buttons[j].classList.remove('selected');
+    }
 
-let primeiroBtn = btn_slider[0];
-let proximoBtn = btn_slider[1];
+    this.classList.add('selected');
 
-setInterval(() => {
-    trocarSlide(slideAtual, slideProximo);
-    slideAtual = slideProximo;
-    slideProximo = slideAtual.nextElementSibling || slides[0];
+    for (let j = 0; j < videos.length; j++) {
+      videos[j].classList.remove('active');
+    }
 
-    trocarTexto(textoAtual, proximoTexto);
-    textoAtual = proximoTexto;
-    proximoTexto = textoAtual.nextElementSibling || textos[0];
+    for (let j = 0; j < sliders.length; j++) {
+      sliders[j].classList.remove('active');
+    }
 
-    mudarClasseBtn(primeiroBtn, proximoBtn);
-    primeiroBtn = proximoBtn;
-    proximoBtn = primeiroBtn.nextElementSibling || btn_slider[0];
-}, 9000);
+    sliders[i].classList.add('active');
+  });
+}
+
+menuBtn.addEventListener('click', function () {
+    if (menuBtn.classList.contains('animate')) {
+        menuBtn.classList.remove('animate');
+
+        navMenu.classList.remove('animate');
+    } else {
+        menuBtn.classList.add('animate');
+
+        navMenu.classList.add('animate');
+    }
+});
