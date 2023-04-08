@@ -71,6 +71,7 @@
     }
 
     .bg-video.active {
-        height: 60%;
+        width: 95%;
+        height: 67%;
     }
 }
