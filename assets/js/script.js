@@ -3,6 +3,7 @@ const sliders = document.querySelectorAll('.slider');
 const videos = document.querySelectorAll('.bg-video');
 
 const menuBtn = document.querySelector('.mobile-menu');
+const navMenu = document.querySelector('nav.menu-wrap');
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function() {
@@ -34,7 +35,11 @@ for (let i = 0; i < buttons.length; i++) {
 menuBtn.addEventListener('click', function () {
     if (menuBtn.classList.contains('animate')) {
         menuBtn.classList.remove('animate');
+
+        navMenu.classList.remove('animate');
     } else {
         menuBtn.classList.add('animate');
+
+        navMenu.classList.add('animate');
     }
 });

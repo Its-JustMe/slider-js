@@ -15,3 +15,11 @@
         transform: rotate(90deg);
     }
 }
+
+@keyframes show-menu {
+    from {
+        transform: translateX(200px);
+    } to {
+        transform: translateX(0);
+    }
+}
