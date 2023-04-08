@@ -1,6 +1,6 @@
 /* ------ Configurações de Responsividade ------*/
 
-@media (max-width: 780px) {
+@media (max-width: 820px) {
     .menu-wrap {
         display: none;
     }
@@ -69,10 +69,11 @@
         animation: rotacionarIcone .5s;
         transform: rotate(90deg);
     }
+}
 
+@media (max-width: 600px) {
     .bg-video.active {
         width: 99.7%;
-        height: 67%;
-        padding: 20px;
+        height: 65%;
     }
 }
