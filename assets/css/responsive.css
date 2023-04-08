@@ -3,6 +3,15 @@
 @media (max-width: 780px) {
     .menu-wrap {
         display: flex;
+        flex-direction: column;
+        z-index: 2;
+
+        position: fixed;
+        right: 0;
+        top: 0;
+
+        width: 200px;
+        height: 100%;
     }
     .titulo-anime {
         font-size: 3em;
