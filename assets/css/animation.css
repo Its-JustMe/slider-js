@@ -18,8 +18,8 @@
 
 @keyframes show-menu {
     from {
-        transform: translateX(200px);
+        width: 0;
     } to {
-        transform: translateX(0);
+        width: 200px;
     }
 }

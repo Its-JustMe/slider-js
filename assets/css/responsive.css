@@ -2,18 +2,9 @@
 
 @media (max-width: 780px) {
     .menu-wrap {
-        display: flex;
-        flex-direction: column;
-        z-index: 3;
-
-        position: fixed;
-        right: 50px;
-        top: 50px;
-        background-color: #fff;
-
-        width: 500px;
-        height: 100%;
+        display: none;
     }
+
     .titulo-anime {
         font-size: 3em;
     }
@@ -26,19 +17,26 @@
     }
 
     .menu-wrap.animate {
-        display: flex;
-        flex-direction: column;
+        display: block;
         z-index: 2;
+        padding-top: 3em;
+
+        background-color: #11073323;
+        backdrop-filter: blur(3px);
 
         position: fixed;
         right: 0;
-        top: 0;
+        top: 57px;
 
         width: 200px;
         height: 100%;
         transform: translateX(0);
 
         animation: show-menu .8s;
+    }
+
+    .menu {
+        flex-direction: column;
     }
 
     .mobile-menu {
@@ -55,6 +53,7 @@
         cursor: pointer;
         transition: all .5s;
     }
+    .mobile-menu, .line {   transition: all .5s     }
     .line {
         width: 100%;
         height: 4px;
@@ -69,5 +68,9 @@
     .mobile-menu.animate {
         animation: rotacionarIcone .5s;
         transform: rotate(90deg);
+    }
+
+    .bg-video.active {
+        height: 90%;
     }
 }
