@@ -32,10 +32,9 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 menuBtn.addEventListener('click', function () {
-  alert('Teste');
     if (menuBtn.classList.contains('animate')) {
-        menuBtn.classList.toggle('animate');
-    } else {
         menuBtn.classList.remove('animate');
+    } else {
+        menuBtn.classList.add('animate');
     }
 });
