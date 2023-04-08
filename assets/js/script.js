@@ -6,6 +6,8 @@ const btn_slider = document.querySelectorAll('.select');
 const slides = document.querySelectorAll('video');
 const textos = document.querySelectorAll('.slider');
 
+console.log(textos);
+
 let slideAtual = slides[0];
 let slideProximo = slides[1];
 
