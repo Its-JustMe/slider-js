@@ -29,4 +29,4 @@
   </ul>
 </ul>
 
-<p> Baseado em: https://github.com/Gabriel-Damas/Slide.Anime</p>
+<h4> Baseado em: https://github.com/Gabriel-Damas/Slide.Anime</h4>
