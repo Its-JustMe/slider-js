@@ -22,6 +22,10 @@
         padding-left: 5px;
     }
 
+    .btn-container {
+        margin-top: 1.5em;
+    }
+
     .menu-wrap.animate {
         display: block;
         z-index: 4;
@@ -80,6 +84,6 @@
 @media (max-width: 600px) {
     .bg-video.active {
         width: 99.7%;
-        height: 65%;
+        height: 55%;
     }
 }
