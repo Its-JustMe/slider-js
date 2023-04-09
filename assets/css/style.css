@@ -7,6 +7,7 @@ body {
 header {
     width: 100%;
     height: 2em;
+    position: fixed;
 
     background: #11073323;
     padding: 0.8em;

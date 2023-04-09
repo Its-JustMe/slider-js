@@ -29,7 +29,7 @@
         background-color: #11073323;
         backdrop-filter: blur(3px);
 
-        position: relative;
+        position: fixed;
         right: 0;
         top: 57px;
 
