@@ -21,6 +21,10 @@
         font-size: 1.5em;
         padding-left: 5px;
     }
+    
+    .btn-container {
+        margin-top: 1.5em;
+    }
 
     .menu-wrap.animate {
         display: block;
