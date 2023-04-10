@@ -120,7 +120,7 @@ a:hover::after {
     max-width: 680px;
     
     margin-left: 4em;
-    margin-top: 4em;
+    margin-top: 6em;
     padding: 10px;
 
     backdrop-filter: blur(1px);
