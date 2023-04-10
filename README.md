@@ -1,6 +1,6 @@
 <h1 align="center"> Slide-show com Javascript </h1>
 
-<img src="./assets/img/pagina.png">
+<img src="./assets/img/site.png">
 
 <h2 align="center">Um slide-show simples feito com Javascript</h2>
 
@@ -16,7 +16,7 @@
 
 <h3> ➢ Outras informações </h3>
 <ul>
-  <li> <strong>Status:</strong> <em>Desenvolvendo</em>
+  <li> <strong>Status:</strong> <em>Finalizado</em>
   <li> <strong>Linguagens utilizadas:</strong> <br>
     <div style="display: inline-block;">
       <img align="center" alt="html" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />       
